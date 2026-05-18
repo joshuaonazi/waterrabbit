@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WATER RABBIT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <!-- LOADING SCREEN -->
+    <div id="loading-screen" class="loading-screen" aria-live="polite" aria-label="Loading Water Rabbit site">
+        <div class="loader-effect" aria-hidden="true">
+            <div class="rain"></div>
+            <svg class="loader-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+                <defs>
+                    <linearGradient id="loaderWater" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#1e3a5f" />
+                        <stop offset="100%" stop-color="#0f1a2e" />
+                    </linearGradient>
+                </defs>
+                <path d="M0,100 Q180,80 360,100 T720,100 T1080,100 T1440,100 L1440,120 L0,120 Z" fill="url(#loaderWater)" opacity="0.85">
+                    <animate attributeName="d" dur="2s" repeatCount="indefinite" values="M0,100 Q180,80 360,100 T720,100 T1080,100 T1440,100 L1440,120 L0,120 Z;M0,100 Q180,120 360,100 T720,100 T1080,120 T1440,100 L1440,120 L0,120 Z;M0,100 Q180,80 360,100 T720,100 T1080,100 T1440,100 L1440,120 L0,120 Z" />
+                </path>
+            </svg>
+        </div>
+        <div class="loader-inner">
+            <img src="assets/Rabbit.png" alt="Water Rabbit logo" class="loader-logo" />
+            <div class="loader-text">$WAR to $1</div>
+            <div class="loader-bar-shell" aria-hidden="true">
+                <div class="loader-progress"></div>
+            </div>
+            <div class="loader-percent">0%</div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav>
+        <a href="#" class="nav-logo">
+            <img src="/assets/Rabbit.png" alt="Water Rabbit Logo" />
+        </a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#buy">How to Buy</a></li>
+            <li><a href="#tokenomics">Tokenomics</a></li>
+            <li><a href="#footer-cta">Utilities</a></li>
+            <li><a href="/assets/Water-Rabbit-English-wp.pdf" target="_blank">Whitepaper</a></li>
+        </ul>
+        <a href="https://pancakeswap.finance/swap?outputCurrency=0x57bfe2af99aeb7a3de3bc0c42c22353742bfd20d" target="_blank" class="btn-buy">Buy Now</a>
+        <button class="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-sky"></div>
+        <div class="hero-carousel" aria-hidden="true">
+            <img src="/assets/hero-image/store of value.png" alt="store of value" class="hero-slide active" />
+            <img src="/assets/hero-image/unit of account.png" alt="unit of account" class="hero-slide" />
+            <img src="/assets/hero-image/medium of exchange.png" alt="medium of exchange" class="hero-slide" />
+        </div>
+        <div class="stars"></div>
+        <!-- <div class="moon"></div> -->
+        <div class="hero-coin"></div>
+
+        <!-- Mountain silhouettes -->
+        <div class="hero-content">
+            <div class="hero-texts">
+                <div class="hero-text active">
+                    <h1 class="hero-title">STORE OF VALUE</h1>
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">UNIT OF ACCOUNT</h1>
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">MEDIUM OF EXCHANGE</h1>
+                </div>
+            </div>
+        </div>
+        <div class="hero-cta-group">
+            <!-- <a href="" target="_blank" class="btn-primary">Buy $WAR</a> -->
+            <a href="https://pancakeswap.finance/swap?outputCurrency=0x57bfe2af99aeb7a3de3bc0c42c22353742bfd20d" target="_blank" class="btn-ghost">Buy $WAR</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="about-grid">
+            <div class="about-text fade-up">
+                <!-- <div class="section-label">Origins</div> -->
+                <h2 class="section-title">About <br>Water Rabbit</h2>
+                <div class="divider"></div>
+                <p>
+                    Water Rabbit ($WAR) is a deflationary token on Binance Smart Chain, 
+                    launched in the year 2022 by Shanvere DAO. 
+                    Its name draws from the Chinese Lunar Calendar (The Year of The Water Rabbit) 
+                    and the Zodiac Jade Rabbit's symbolism of patience, endurance, and transformation 
+                    is woven into the project's long-term philosophy.
+                </p>
+                <p>
+                    From its first day, the project positioned itself against the meme-coin stereotype.<br>
+                    The core mission is to evolve $WAR into a functioning digital currency, one that 
+                    operates as a medium of exchange, a store of value, and a unit of account. <br>
+                    These are the three classical functions of money.
+                    Three years after launching at a <br> $755 market cap, the project is still here, still building, 
+                    and still on track.
+                </p>
+
+                <!-- <div class="about-features">
+                    <div class="feature-item">
+                        <h4>Security Architecture</h4>
+                        <p>
+                            <li> Ownership Renounced: The deployer wallet permanently surrendered contract control.</li>
+                            <li> Liquidity Locked: 99% of the liquidity pool is locked on UNCX.</li>
+                            <li> Contract Audited: Independent security review completed with no major issues identified.</li>
+                            <li> Verified on BscScan: Full source code is publicly visible. No hidden functions, no backdoors.</li>
+                        </p>
+                    </div> -->
+                    <!-- <div class="feature-item">
+                        <h4>No Presale · Zero Taxes · Liquidity Locked</h4>
+                        <p>Water Rabbit brings prosperity and harmony through the blockchain, supporting and enhancing Omikami Ecosystem for a future of abundance and innovation.</p>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- <div class="about-visual fade-up">
+                <div class="dragon-orb">
+                    <span class="dragon-kanji">水兔</span>
+                </div>
+            </div> -->
+        </div>
+    </section>
+        <!-- FOOTER CTA -->
+    <section id="footer-cta">
+        <div class="footer-mountains">
+            <svg viewBox="0 0 1440 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:100%;position:absolute;bottom:0;">
+      <polygon points="0,200 180,100 360,150 540,80 720,130 900,60 1080,110 1260,70 1440,100 1440,200" fill="#04060f" opacity="0.7"/>
+      <polygon points="0,200 120,140 300,170 480,110 660,160 840,100 1020,140 1200,110 1440,140 1440,200" fill="#04060f"/>
+    </svg>
+        </div>
+
+        <div class="footer-cta-content fade-up">
+            <h2 class="section-title">$WAR UTILITIES</h2>
+            <p>Water Rabbit brings prosperity and harmony through the blockchain, supporting and enhancing Omikami Ecosystem for a future of abundance and innovation.</p>
+            <a href="https://pancakeswap.finance/swap?outputCurrency=0x57bfe2af99aeb7a3de3bc0c42c22353742bfd20d" target="_blank" class="btn-primary">Buy $WAR</a>
+        </div>
+
+        <!-- FLIP CARDS -->
+        <div class="flip-cards-container">
+            <div class="flip-card fade-up" data-card="library">
+                <div class="flip-card-inner">
+                    <!-- FRONT -->
+                    <div class="flip-card-front">
+                        <div class="card-content">
+                            <svg class="card-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="20" y="15" width="60" height="70" fill="none" stroke="var(--gold-light)" stroke-width="2" rx="4"/>
+                                <line x1="30" y1="25" x2="70" y2="25" stroke="var(--gold-light)" stroke-width="1.5"/>
+                                <line x1="30" y1="35" x2="70" y2="35" stroke="var(--gold-light)" stroke-width="1.5"/>
+                                <line x1="30" y1="45" x2="70" y2="45" stroke="var(--gold-light)" stroke-width="1.5"/>
+                                <line x1="30" y1="55" x2="70" y2="55" stroke="var(--gold-light)" stroke-width="1.5"/>
+                                <line x1="30" y1="65" x2="70" y2="65" stroke="var(--gold-light)" stroke-width="1.5"/>
+                                <line x1="30" y1="75" x2="60" y2="75" stroke="var(--gold-light)" stroke-width="1.5"/>
+                            </svg>
+                            <h3>WAR LIBRARY</h3>
+                            <p class="card-hint">Click to learn more</p>
+                        </div>
+                    </div>
+                    <!-- BACK -->
+                    <div class="flip-card-back">
+                        <div class="card-content">
+                            <h3>WAR LIBRARY</h3>
+                            <p>Comprehensive resource hub featuring documentation, guides, tutorials, and educational materials about the Water Rabbit ecosystem and tokenomics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card fade-up" data-card="warcast">
+                <div class="flip-card-inner">
+                    <!-- FRONT -->
+                    <div class="flip-card-front">
+                        <div class="card-content">
+                            <svg class="card-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="50" r="35" fill="none" stroke="var(--gold-light)" stroke-width="2"/>
+                                <path d="M 35 50 L 50 38 L 65 50 L 65 68 Q 50 76 35 68 Z" fill="var(--gold-light)" opacity="0.3"/>
+                                <circle cx="30" cy="25" r="4" fill="var(--gold-light)"/>
+                                <circle cx="70" cy="30" r="3" fill="var(--gold-light)"/>
+                                <circle cx="75" cy="65" r="2.5" fill="var(--gold-light)"/>
+                            </svg>
+                            <h3>WARCAST</h3>
+                            <p class="card-hint">Click to learn more</p>
+                        </div>
+                    </div>
+                    <!-- BACK -->
+                    <div class="flip-card-back">
+                        <div class="card-content">
+                            <h3>WARCAST</h3>
+                            <p>Official podcast and broadcast series featuring updates, community stories, expert interviews, and in-depth discussions about Water Rabbit developments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card fade-up" data-card="warguard">
+                <div class="flip-card-inner">
+                    <!-- FRONT -->
+                    <div class="flip-card-front">
+                        <div class="card-content">
+                            <svg class="card-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M 50 15 L 75 28 L 75 50 Q 50 75 50 75 Q 25 75 25 50 L 25 28 Z" fill="none" stroke="var(--gold-light)" stroke-width="2.5"/>
+                                <circle cx="50" cy="50" r="8" fill="var(--gold-light)" opacity="0.5"/>
+                                <path d="M 42 45 L 46 50 L 58 38" stroke="var(--gold-light)" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            </svg>
+                            <h3>WARGUARD</h3>
+                            <p class="card-hint">Click to learn more</p>
+                        </div>
+                    </div>
+                    <!-- BACK -->
+                    <div class="flip-card-back">
+                        <div class="card-content">
+                            <h3>WARGUARD</h3>
+                            <p>Security and protection protocols ensuring safe transactions, wallet protection resources, and audit information to safeguard community assets.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOKENOMICS -->
+    <section id="tokenomics">
+        <div class="token-inner fade-up">
+            <div class="section-label" style="justify-content:center;">Token Details</div>
+            <h2 class="section-title">Tokenomics</h2>
+            <div class="divider" style="margin:0 auto 0;"></div>
+
+            <div class="token-grid">
+                <div class="token-cell token-supply">
+                    <div class="token-label">Total Supply</div>
+                    <div class="token-value">3.17B</div>
+                </div>
+                <div class="token-cell">
+                    <div class="token-label">Circulating Supply</div>
+                    <div class="token-value">863M+</div>
+                </div>
+                <div class="token-cell">
+                    <div class="token-label">Burned Tokens</div>
+                    <div class="token-value">2B+</div>
+                </div>
+                <div class="token-cell">
+                    <div class="token-label">Holders</div>
+                    <div class="token-value">16,600+</div>
+                </div>
+                <div class="token-cell">
+                    <div class="token-label">Liquidity</div>
+                    <div class="token-value">100% Locked<br><small style="font-size:0.65rem;color:var(--text-dim);font-family:'Crimson Pro',serif;">to UNCX</small></div>
+                </div>
+                <div class="token-cell">
+                    <div class="token-label">Buy Tax</div>
+                    <div class="token-value">9%</div>
+                </div>
+                <div class="token-cell">
+                    <div class="token-label">Sell Tax</div>
+                    <div class="token-value">9%</div>
+                </div>
+                <div class="token-cell" style="grid-column:span 3;">
+                    <div class="token-label">Contract</div>
+                    <div class="token-value">Renounced</div>
+                </div>
+            </div>
+
+            <div class="token-address">
+                <div class="addr-label">Token Contract Address</div>
+                <code>0x57bfe2af99aeb7a3de3bc0c42c22353742bfd20d</code>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW TO BUY -->
+    <section id="buy">
+        <div class="buy-inner">
+            <div class="fade-up">
+                <div class="section-label">Step by Step</div>
+                <h2 class="section-title">How to Buy Water Rabbit (WAR)<br>on Pancakeswap</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="steps">
+                <div class="step fade-up">
+                    <div class="step-num">1</div>
+                    <div class="step-body">
+                        <h3>Create a Wallet</h3>
+                        <p>If you don't have one yet, start by creating a MetaMask, TrustWallet, or any preferred wallet. MetaMask allows you to buy, sell, send, and receive $RYU. Ensure to keep your recovery phrase in a safe place.</p>
+                    </div>
+                </div>
+                <div class="step fade-up">
+                    <div class="step-num">2</div>
+                    <div class="step-body">
+                        <h3>Get Some BNB</h3>
+                        <p>If your wallet doesn't have BNB, you can purchase it directly through MetaMask, transfer it from another wallet, or buy it on a centralized exchange and then withdraw it to your wallet.</p>
+                    </div>
+                </div>
+                <div class="step fade-up">
+                    <div class="step-num">3</div>
+                    <div class="step-body">
+                        <h3>Go to Pancakeswap</h3>
+                        <p>After you have BNB in your MetaMask wallet, visit app.pancakeswap.finance, click 'Connect to a wallet,' and select MetaMask to connect your wallet to Pancakeswap.</p>
+                    </div>
+                </div>
+                <div class="step fade-up">
+                    <div class="step-num">4</div>
+                    <div class="step-body">
+                        <h3>Swap BNB for $WAR</h3>
+                        <p>Choose the amount you wish to trade and set your slippage to 0.5–1%. Click Swap and confirm the transaction. When your wallet prompts you, confirm the action.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buy-cta fade-up">
+                <a href="https://pancakeswap.finance/swap?outputCurrency=0x57bfe2af99aeb7a3de3bc0c42c22353742bfd20d" target="_blank" class="btn-primary">Buy $WAR</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PARTNERSHIPS -->
+    <section id="partnerships">
+        <div class="partnerships-inner">
+            <div class="section-label" style="text-align: center; margin-bottom: 32px;">Our Ecosystem</div>
+            <h2 class="section-title" style="text-align: center; margin-bottom: 48px;">Strategic Partners</h2>
+            
+            <div class="partners-carousel">
+                <div class="partners-track">
+                    <div class="partner-item">
+                        <div class="partner-logo"><a href="https://phoenixtoken.com" target="_blank">Phoenix Token</a></div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">PancakeSwap</div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">Binance Chain</div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo"><a href="https://giantwallet.com" target="_blank">Giant Wallet</a></div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo"><a href="https://firescreener.com" target="_blank">FireScreener</a></div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo"><a href="https://luminousai.com" target="_blank">Luminous AI</a></div>
+                    </div>
+                    <!-- Duplicated for seamless loop -->
+                    <div class="partner-item">
+                        <div class="partner-logo"><a href="https://www.phoenixtoken.community" target="_blank">Phoenix Token</a></div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">PancakeSwap</div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">Binance Chain</div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo"><a href="https://giantwallet.com" target="_blank">Giant Wallet</a></div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo"><a href="https://firescreener.com" target="_blank">FireScreener</a></div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo"><a href="https://luminousai.com" target="_blank">Luminous AI</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT US -->
+    <section id="contact">
+        <div class="contact-inner">
+            <div class="contact-header fade-up">
+                <div class="section-label">Get in Touch</div>
+                <h2 class="section-title">Contact Us</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info fade-up">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">✉</div>
+                        <div class="info-text">
+                            <p class="info-label">Email</p>
+                            <a href="mailto:contact@waterrabbit.com">contact@waterrabbit.com</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">🌐</div>
+                        <div class="info-text">
+                            <p class="info-label">Website</p>
+                            <a href="https://waterrabbit.com">www.waterrabbit.com</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon community"><img src="/assets/community.gif" alt="community icon" ></div>
+                        <div class="info-text">
+                            <p class="info-label">Community</p>
+                            <p>Join our WhatsApp & Telegram for support</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon whatsapp"><img src="/assets/whatsapp.png" alt="WhatsApp icon"></div>
+                        <div class="info-text">
+                            <p class="info-label">WhatsApp</p>
+                            <a href="https://wa.me/yourphonenumber" target="_blank">Chat with us</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.869 4.326-2.96-.924c-.644-.213-.658-.644.135-.954l11.566-4.461c.54-.198 1.011.131.844.941z"/>
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <p class="info-label">Telegram</p>
+                            <a href="https://t.me/waterrabbit" target="_blank">@waterrabbit</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">𝕏</div>
+                        <div class="info-text">
+                            <p class="info-label">X (Twitter)</p>
+                            <a href="https://x.com/WaterRabbitNew" target="_blank">@waterrabbitnew</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📱</div>
+                        <div class="info-text">
+                            <p class="info-label">Response Time</p>
+                            <p>We typically respond within 24 hours</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form fade-up" id="contact-form">
+                    <h3>Send us a Message</h3>
+
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="What is this about?">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Your message here..." rows="5"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Send Message</button>
+                    <p class="form-note">We'll get back to you as soon as possible.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="faq-inner">
+            <div class="section-label">FAQ</div>
+            <h2 class="section-title">Frequently Asked Questions about $WAR</h2>
+            <div class="divider"></div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button type="button" class="faq-toggle" aria-expanded="false">
+                        <span>What is $WAR?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>$WAR is the Water Rabbit token on Binance Smart Chain. It is a deflationary asset with a renounced contract, locked liquidity, and community-driven utility.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-toggle" aria-expanded="false">
+                        <span>How can I buy $WAR?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Buy $WAR on PancakeSwap using BNB. Set your slippage to 0.5–1%, connect your wallet, and swap BNB for $WAR using the contract address shown on this page.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-toggle" aria-expanded="false">
+                        <span>Is the contract secure?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. The contract is verified on BscScan, ownership has been renounced, and 99% of the liquidity pool is locked on UNCX for added security.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-toggle" aria-expanded="false">
+                        <span>Where can I learn more?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Visit the Whitepaper, join our Telegram or WhatsApp community, and explore the WAR Library for guides, documentation, and ecosystem updates.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-brand-header">
+                    <img src="/assets/Rabbit.png" alt="Water Rabbit" class="footer-logo-img" />
+                    <span class="footer-title">Water Rabbit</span>
+                </div>
+                <p class="footer-tagline">Deflationary token built on Binance Smart Chain, <br> for education and security.</p>
+            </div>
+
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4>UTILITIES</h4>
+                    <ul>
+                        <li><a href="https://waraguard.app/library" target="_blank">WAR Library</a></li>
+                        <li><a href="https://x.com/WARCAST_" target="_blank">WARCAST</a></li>
+                        <li><a href="https://waraguard.app" target="_blank">WARGUARD</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>FOLLOW US</h4>
+                    <ul>
+                        <li><a href="https://t.me/waterrabbittoken" target="_blank">TELEGRAM</a></li>
+                        <li><a href="https://x.com/WaterRabbitNew" target="_blank">TWITTER</a></li>
+                        <li><a href="https://chat.whatsapp.com/JjkVvb8lRbE7VD3pEFQtAq" target="_blank">WHATSAPP</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>OTHERS</h4>
+                    <ul>
+                        <li><a href="/assets/Water-Rabbit-English-wp.pdf" target="_blank">WHITEPAPER</a></li>
+                        <li><a href="https://pancakeswap.finance/swap?outputCurrency=0x57bfe2af99aeb7a3de3bc0c42c22353742bfd20d" target="_blank">PANCAKESWAP</a></li>
+                        <li><a href="#contact">BUY NOW</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span class="footer-copy">Copyright &copy; 2026 Water Rabbit. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
