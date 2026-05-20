@@ -730,9 +730,7 @@
                                     }
 
                                     .about-text h2 {
-                                        font-size: 3.6rem;
-                                        margin-bottom: -20px;
-                                        margin-left: -50px;
+                                        font-size: 2rem;
                                     }
                                      
                                      .about-text p {
@@ -988,17 +986,16 @@
                                      
                                      .token-address .addr-label {
                                          font-family: 'Cinzel', serif;
-                                         font-size: 1rem;
+                                         font-size: 0.6rem;
                                          letter-spacing: 0.3em;
                                          color: var(--gold);
                                          text-transform: uppercase;
-                                         text-decoration: solid ;
                                          margin-bottom: 8px;
                                      }
                                      
                                      .token-address code {
                                          font-family: 'Courier New', monospace;
-                                         font-size: 1.5rem;
+                                         font-size: 0.85rem;
                                          color: var(--text);
                                          word-break: break-all;
                                      }
@@ -1062,11 +1059,9 @@
                                      }
 
                                      .footer-logo-img {
-                                         width: 100px;
-                                         height: 100px;
+                                         width: 48px;
+                                         height: 48px;
                                          object-fit: contain;
-                                         margin-top: -50px;
-                                         margin-left: 100px;
                                      }
 
                                      .footer-title {
@@ -1079,11 +1074,8 @@
 
                                      .footer-tagline {
                                          color: var(--text-dim);
-                                         font-size: 1rem;
-                                         text-align: left;
+                                         font-size: 0.9rem;
                                          line-height: 1.6;
-                                         margin-top: -20px;
-                                         margin-left: 40px;
                                      }
 
                                      .footer-columns {
@@ -1238,10 +1230,10 @@
                                              font-size: 5rem; */
                                          }
                                          .token-grid {
-                                             grid-template-columns: 1fr 1fr 1fr;
+                                             grid-template-columns: 1fr 1fr;
                                          }
                                          .token-supply {
-                                             grid-column: span 3;
+                                             grid-column: span 2;
                                          }
                                          footer {
                                              flex-direction: column;

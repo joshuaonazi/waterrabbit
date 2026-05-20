@@ -991,8 +991,7 @@
                                          font-size: 1rem;
                                          letter-spacing: 0.3em;
                                          color: var(--gold);
-                                         text-transform: uppercase;
-                                         text-decoration: solid ;
+                                         text-transform: uppercase solid;
                                          margin-bottom: 8px;
                                      }
                                      
@@ -1062,11 +1061,9 @@
                                      }
 
                                      .footer-logo-img {
-                                         width: 100px;
-                                         height: 100px;
+                                         width: 48px;
+                                         height: 48px;
                                          object-fit: contain;
-                                         margin-top: -50px;
-                                         margin-left: 100px;
                                      }
 
                                      .footer-title {
@@ -1079,11 +1076,8 @@
 
                                      .footer-tagline {
                                          color: var(--text-dim);
-                                         font-size: 1rem;
-                                         text-align: left;
+                                         font-size: 0.9rem;
                                          line-height: 1.6;
-                                         margin-top: -20px;
-                                         margin-left: 40px;
                                      }
 
                                      .footer-columns {

@@ -1066,7 +1066,7 @@
                                          height: 100px;
                                          object-fit: contain;
                                          margin-top: -50px;
-                                         margin-left: 100px;
+                                         margin-left: 20px;
                                      }
 
                                      .footer-title {
@@ -1083,7 +1083,7 @@
                                          text-align: left;
                                          line-height: 1.6;
                                          margin-top: -20px;
-                                         margin-left: 40px;
+                                         margin-left: 20px;
                                      }
 
                                      .footer-columns {

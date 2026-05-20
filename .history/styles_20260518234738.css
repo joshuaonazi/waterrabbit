@@ -1066,7 +1066,6 @@
                                          height: 100px;
                                          object-fit: contain;
                                          margin-top: -50px;
-                                         margin-left: 100px;
                                      }
 
                                      .footer-title {
@@ -1079,11 +1078,10 @@
 
                                      .footer-tagline {
                                          color: var(--text-dim);
-                                         font-size: 1rem;
+                                         font-size: 0.9rem;
                                          text-align: left;
                                          line-height: 1.6;
-                                         margin-top: -20px;
-                                         margin-left: 40px;
+                                         margin-left: -50px;
                                      }
 
                                      .footer-columns {
