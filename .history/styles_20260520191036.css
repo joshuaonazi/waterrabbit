@@ -1770,6 +1770,10 @@
     border-radius: 999px;
 }
 
+.info-icon.whatsapp svg {
+    width: 24px;
+    height: 24px;
+}
 
 .info-text {
     flex: 1;

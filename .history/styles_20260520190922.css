@@ -1763,13 +1763,17 @@
 }
 
 .info-icon.whatsapp {
-    width: 35px;
-    height: 35px;
+    width: 44px;
+    height: 44px;
     color: #fff;
     background: #25D366;
     border-radius: 999px;
 }
 
+.info-icon.whatsapp svg {
+    width: 24px;
+    height: 24px;
+}
 
 .info-text {
     flex: 1;

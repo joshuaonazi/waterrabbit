@@ -1343,10 +1343,9 @@
 
 .flip-cards-container {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 28px;
     padding: 60px 48px 40px;
-    width: 100px;
     max-width: 1200px;
     margin: 0 auto;
     perspective: 1000px;
@@ -1763,13 +1762,17 @@
 }
 
 .info-icon.whatsapp {
-    width: 35px;
-    height: 35px;
+    width: 44px;
+    height: 44px;
     color: #fff;
     background: #25D366;
     border-radius: 999px;
 }
 
+.info-icon.whatsapp svg {
+    width: 24px;
+    height: 24px;
+}
 
 .info-text {
     flex: 1;
@@ -1792,7 +1795,7 @@
     margin: 0;
 }
 
-.info-text a, .info-text .socials {
+.info-text a {
     color: var(--gold-light);
     text-decoration: none;
     font-size: 0.95rem;
