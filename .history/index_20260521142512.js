@@ -180,7 +180,11 @@
         })();
 
         
-        /* ========UTILITY SECTION======== */
+        /* ============================================================
+   UTILITY SECTION — JavaScript
+   Place this just before your closing </body> tag
+   OR wrap it in: document.addEventListener('DOMContentLoaded', () => { ... })
+   ============================================================ */
 
 (function () {
   "use strict";
@@ -354,119 +358,5 @@
   /* ── Init ─────────────────────────────────────────── */
   buildDots();
   goTo(0);
-
-})();
-
-
-/* ============================================================
-   ROADMAP SECTION — JavaScript
-   Place just before your closing </body> tag
-   ============================================================ */
-
-(function () {
-  "use strict";
-
-  /* ── Grab all phase buttons and their matching card wraps ── */
-  const buttons   = Array.from(document.querySelectorAll(".rm-btn"));
-  const cardWraps = Array.from(document.querySelectorAll(".rm-card-wrap"));
-  const spineFill = document.getElementById("rmSpineFill");
-
-  if (!buttons.length) return;
-
-  /* ── Currently open index (-1 = none) ─────────────────────── */
-  let openIndex = -1;
-
-  /* ── Open a specific card ──────────────────────────────────── */
-  function openCard(index) {
-    // Close whichever is currently open (unless it's the same one)
-    if (openIndex !== -1 && openIndex !== index) {
-      closeCard(openIndex);
-    }
-
-    const btn  = buttons[index];
-    const wrap = cardWraps[index];
-    if (!btn || !wrap) return;
-
-    btn.setAttribute("aria-expanded", "true");
-    wrap.classList.add("is-open");
-    openIndex = index;
-
-    // Smooth scroll the button into view on mobile
-    setTimeout(() => {
-      btn.scrollIntoView({ behavior: "smooth", block: "nearest" });
-    }, 80);
-  }
-
-  /* ── Close a specific card ─────────────────────────────────── */
-  function closeCard(index) {
-    const btn  = buttons[index];
-    const wrap = cardWraps[index];
-    if (!btn || !wrap) return;
-
-    btn.setAttribute("aria-expanded", "false");
-    wrap.classList.remove("is-open");
-
-    if (openIndex === index) openIndex = -1;
-  }
-
-  /* ── Toggle handler ────────────────────────────────────────── */
-  buttons.forEach((btn, i) => {
-    btn.addEventListener("click", () => {
-      if (openIndex === i) {
-        closeCard(i);           // tap same button = collapse
-      } else {
-        openCard(i);            // tap different button = switch
-      }
-    });
-
-    /* Keyboard: Enter / Space already fires click on <button>,
-       but add arrow-key navigation between phases */
-    btn.addEventListener("keydown", (e) => {
-      if (e.key === "ArrowDown") {
-        e.preventDefault();
-        const next = buttons[i + 1];
-        if (next) next.focus();
-      }
-      if (e.key === "ArrowUp") {
-        e.preventDefault();
-        const prev = buttons[i - 1];
-        if (prev) prev.focus();
-      }
-    });
-  });
-
-  /* ── Spine fill: grows to reflect how far "complete" goes ─── */
-  function updateSpine() {
-    if (!spineFill) return;
-
-    const phases     = Array.from(document.querySelectorAll(".rm-phase"));
-    const total      = phases.length;
-    const completed  = phases.filter(p => p.classList.contains("complete")).length;
-    const inProgress = phases.some(p => p.classList.contains("in-progress")) ? 0.5 : 0;
-
-    // Fraction of the spine to fill
-    const fraction = ((completed + inProgress) / total) * 100;
-    spineFill.style.height = fraction.toFixed(1) + "%";
-  }
-
-  /* ── Progress bar animation re-trigger when card opens ─────── */
-  cardWraps.forEach((wrap) => {
-    const fill = wrap.querySelector(".rm-progress-fill");
-    if (!fill) return;
-
-    // Reset animation each time the card opens so it plays fresh
-    const observer = new MutationObserver(() => {
-      if (wrap.classList.contains("is-open")) {
-        fill.style.animation = "none";
-        void fill.offsetWidth; // force reflow
-        fill.style.animation  = "";
-      }
-    });
-
-    observer.observe(wrap, { attributes: true, attributeFilter: ["class"] });
-  });
-
-  /* ── Init ──────────────────────────────────────────────────── */
-  updateSpine();
 
 })();
