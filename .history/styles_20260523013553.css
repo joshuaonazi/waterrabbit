@@ -1730,6 +1730,13 @@
                                          margin-top: 40px;
                                      }
 
+                                     @media (max-width: 768px) {
+                                         .about-section {
+                                            font-size: 14px;
+                                            margin: 10px;
+                                         }
+
+                                     
                                      .feature-item {
                                          border-left: 2px solid var(--gold);
                                          padding-left: 20px;
@@ -1786,6 +1793,9 @@
                                          color: rgba(200, 146, 42, 0.6);
                                          font-family: serif;
                                          text-shadow: 0 0 30px rgba(200, 146, 42, 0.4);
+                                         animation: kanjiFloat 6s ease-in-out infinite; */
+                                     }
+                                         animation: kanjiFloat 6s ease-in-out infinite;
                                      } */
                                      
                                      @keyframes kanjiFloat {
@@ -2213,6 +2223,7 @@
                                              height: 180px;
                                          }
                                          /* .dragon-kanji {
+                                             font-size: 5rem; */
                                              font-size: 5rem;
                                          } */
                                          .about-text h2 {
@@ -2223,9 +2234,6 @@
                                          .about-text p {
                                              margin-left: 0;
                                              font-size: 1.1rem;
-                                         }
-                                         .about-text p br {
-                                             display: none;
                                          }
                                          .token-grid {
                                              grid-template-columns: 1fr 1fr 1fr;
@@ -2240,7 +2248,6 @@
                                          .footer-links {
                                              justify-content: center;
                                          }
-                                     }
                                      
                                      
                                      @media (max-width: 480px) {

@@ -975,7 +975,6 @@
                                     background: var(--deep);
                                     padding: 90px 20px 80px;
                                     font-family: 'Cinzel', system-ui, sans-serif;
-                                    font-family: 'Cinzel', system-ui, sans-serif;
                                     overflow: hidden;
                                     }
 
@@ -1729,7 +1728,7 @@
                                          gap: 28px;
                                          margin-top: 40px;
                                      }
-
+                                     
                                      .feature-item {
                                          border-left: 2px solid var(--gold);
                                          padding-left: 20px;
@@ -1786,7 +1785,8 @@
                                          color: rgba(200, 146, 42, 0.6);
                                          font-family: serif;
                                          text-shadow: 0 0 30px rgba(200, 146, 42, 0.4);
-                                     } */
+                                         animation: kanjiFloat 6s ease-in-out infinite; */
+                                     }
                                      
                                      @keyframes kanjiFloat {
                                          0%,
@@ -2213,19 +2213,7 @@
                                              height: 180px;
                                          }
                                          /* .dragon-kanji {
-                                             font-size: 5rem;
-                                         } */
-                                         .about-text h2 {
-                                             margin-left: 0;
-                                             margin-bottom: 10px;
-                                             font-size: clamp(2rem, 8vw, 2.5rem);
-                                         }
-                                         .about-text p {
-                                             margin-left: 0;
-                                             font-size: 1.1rem;
-                                         }
-                                         .about-text p br {
-                                             display: none;
+                                             font-size: 5rem; */
                                          }
                                          .token-grid {
                                              grid-template-columns: 1fr 1fr 1fr;
@@ -2241,7 +2229,6 @@
                                              justify-content: center;
                                          }
                                      }
-                                     
                                      
                                      @media (max-width: 480px) {
                                          .token-grid {
