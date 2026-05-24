@@ -2216,9 +2216,6 @@
                                              margin-left: auto;
                                              margin-right: auto;
                                          }
-                                         .hero-slide {
-                                             transform: translateX(-50%) scale(4.6); /* Apply zoom for mobile */
-                                         }
                                          .hero-coin {
                                              width: 50px;
                                              height: 50px;

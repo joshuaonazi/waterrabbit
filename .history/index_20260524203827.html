@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WATER RABBIT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;900&family=Crimson+Pro:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <!-- LOADING SCREEN -->
+    <div id="loading-screen" class="loading-screen" aria-live="polite" aria-label="Loading Water Rabbit site">
+        <div class="loader-effect" aria-hidden="true">
+            <div class="rain"></div>
+            <svg class="loader-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+                <defs>
+                    <linearGradient id="loaderWater" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#1e3a5f" />
+                        <stop offset="100%" stop-color="#0f1a2e" />
+                    </linearGradient>
+                </defs>
+                <path d="M0,100 Q180,80 360,100 T720,100 T1080,100 T1440,100 L1440,120 L0,120 Z" fill="url(#loaderWater)" opacity="0.85">
+                    <animate attributeName="d" dur="2s" repeatCount="indefinite" values="M0,100 Q180,80 360,100 T720,100 T1080,100 T1440,100 L1440,120 L0,120 Z;M0,100 Q180,120 360,100 T720,100 T1080,120 T1440,100 L1440,120 L0,120 Z;M0,100 Q180,80 360,100 T720,100 T1080,100 T1440,100 L1440,120 L0,120 Z" />
+                </path>
+            </svg>
+        </div>
+        <div class="loader-inner">
+            <img src="assets/Rabbit.png" alt="Water Rabbit logo" class="loader-logo" />
+            <div class="loader-text">$WAR to $1</div>
+            <div class="loader-bar-shell" aria-hidden="true">
+                <div class="loader-progress"></div>
+            </div>
+            <div class="loader-percent">0%</div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav>
+        <a href="#" class="nav-logo">
+            <img src="/assets/Rabbit.png" alt="Water Rabbit Logo" />
+        </a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#buy">How to Buy</a></li>
+            <li><a href="#tokenomics">Tokenomics</a></li>
+            <li><a href="#footer-cta">Utilities</a></li>
+            <li><a href="/assets/Water-Rabbit-English-wp.pdf" target="_blank">Whitepaper</a></li>
+        </ul>
+        <a href="https://pancakeswap.finance/swap?outputCurrency=0x57bfe2af99aeb7a3de3bc0c42c22353742bfd20d" target="_blank" class="btn-buy">Buy Now</a>
+        <button class="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-sky"></div>
+        <div class="hero-carousel" aria-hidden="true">
+            <picture>
+                <source media="(max-width: 768px)" srcset="/assets/hero-image/portrait-1.png">
+                <img src="/assets/hero-image/store of value.png" alt="store of value" class="hero-slide active" />
+            </picture>
+            <picture>
+                <source media="(max-width: 768px)" srcset="/assets/hero-image/portrait-2.png">
+                <img src="/assets/hero-image/unit of account.png" alt="unit of account" class="hero-slide" />
+            </picture>
+            <picture>
+                <source media="(max-width: 768px)" srcset="/assets/hero-image/portrait-3.png">
+                <img src="/assets/hero-image/medium of exchange.png" alt="medium of exchange" class="hero-slide" />
+            </picture>
+        </div>
+        <div class="stars"></div>
+        <!-- <div class="moon"></div> -->
+        <div class="hero-coin"></div>
+
+        <!-- Mountain silhouettes -->
+        <div class="hero-content">
+            <div class="hero-texts">
+                <div class="hero-text active">
+                    <h1 class="hero-title">STORE OF VALUE</h1>
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">UNIT OF ACCOUNT</h1>
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">MEDIUM OF EXCHANGE</h1>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bottom-gradient"></div>
+        <div class="hero-cta-group">
+            <!-- <a href="" target="_blank" class="btn-primary">Buy $WAR</a> -->
+            <a href="https://pancakeswap.finance/swap?outputCurrency=0x57bfe2af99aeb7a3de3bc0c42c22353742bfd20d" target="_blank" class="btn-ghost">Buy $WAR</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="about-grid">
+            <div class="about-text fade-up">
+                <!-- <div class="section-label">Origins</div> -->
+                <h2 class="section-title">About Water Rabbit</h2>
+                <div class="divider"></div>
+                <p>
+                    Water Rabbit ($WAR) is a deflationary token on Binance Smart Chain, 
+                    launched in the year 2022 by Shanvere DAO. 
+                    Its name draws from the Chinese Lunar Calendar (The Year of The Water Rabbit) 
+                    and the Zodiac Jade Rabbit's symbolism of patience, endurance, and transformation 
+                    is woven into the project's <br>long-term philosophy.
+                </p>
+                <p>
+                    From its first day, the project positioned itself against the<br> meme-coin stereotype.
+                    The core mission is to evolve $WAR into a functioning digital currency, one that 
+                    operates as a medium of exchange, a store of value, and a unit of account.
+                    These are the three classical functions of money.
+                    Three years after launching at a $755 market cap, the project is still here, still building, 
+                    and still on track.
+                </p>
+
+                <!-- <div class="about-features">
+                    <div class="feature-item">
+                        <h4>Security Architecture</h4>
+                        <p>
+                            <li> Ownership Renounced: The deployer wallet permanently surrendered contract control.</li>
+                            <li> Liquidity Locked: 99% of the liquidity pool is locked on UNCX.</li>
+                            <li> Contract Audited: Independent security review completed with no major issues identified.</li>
+                            <li> Verified on BscScan: Full source code is publicly visible. No hidden functions, no backdoors.</li>
+                        </p>
+                    </div> -->
+                    <!-- <div class="feature-item">
+                        <h4>No Presale · Zero Taxes · Liquidity Locked</h4>
+                        <p>Water Rabbit brings prosperity and harmony through the blockchain, supporting and enhancing Omikami Ecosystem for a future of abundance and innovation.</p>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- <div class="about-visual fade-up">
+                <div class="dragon-orb">
+                    <span class="dragon-kanji">水兔</span>
+                </div>
+            </div> -->
+    </section>
+        <!-- FOOTER CTA -->
+    <section id="footer-cta">
+        <!-- <div class="footer-mountains">
+            <svg viewBox="0 0 1440 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="width:100%;height:100%;position:absolute;bottom:0;">
+      <polygon points="0,200 180,100 360,150 540,80 720,130 900,60 1080,110 1260,70 1440,100 1440,200" fill="#04060f" opacity="0.7"/>
+      <polygon points="0,200 120,140 300,170 480,110 660,160 840,100 1020,140 1200,110 1440,140 1440,200" fill="#04060f"/>
+    </svg>
+        </div> -->
+
+        <!-- <div class="footer-cta-content fade-up">
+            <h2 class="section-title">$WAR UTILITIES</h2> -->
+            <!-- <p>Water Rabbit brings prosperity and harmony through the blockchain, supporting and enhancing Omikami Ecosystem for a future of abundance and innovation.</p>
+            <a href="https://pancakeswap.finance/swap?outputCurrency=0x57bfe2af99aeb7a3de3bc0c42c22353742bfd20d" target="_blank" class="btn-primary">Buy $WAR</a>
+            -->
+        </div>
+    </section>
+
+    <!-- UTILITY-SECTION -->
+
+    <section class="utility-section">
+
+    <div class="utility-header">
+        <p class="utility-label">WHAT WE ARE BUILDING</p>
+        <h2 class="utility-title">$WAR Core Utilities</h2>
+        <p class="utility-subtitle">Click any utility to explore</p>
+    </div>
+
+    <!-- Carousel wrapper -->
+    <div class="carousel-container">
+
+        <button class="carousel-btn prev-btn" id="prevBtn" aria-label="Previous">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="15 18 9 12 15 6"/>
+        </svg>
+        </button>
+
+        <div class="carousel-track-wrapper">
+        <div class="carousel-track" id="carouselTrack">
+
+            <!-- CARD 1 -->
+            <div class="card-wrapper">
+            <div class="flip-card" tabindex="0" role="button" aria-label="Staking utility — click to flip">
+                <div class="flip-card-inner">
+
+                <!-- Front -->
+                <div class="flip-card-front">
+                    <div class="card-glow"></div>
+                    <div class="card-icon-wrap">
+                    <!-- Replace src with your own image -->
+                    <img
+                        src="https://api.iconify.design/cryptocurrency-color:stake.svg"
+                        alt="Staking"
+                        class="card-img"
+                        onerror="this.src='https://api.iconify.design/ph:coin-bold.svg?color=%2300f0ff'"
+                    />
+                    </div>
+                    <span class="card-name">WAR LIBRARY</span>
+                    <span class="card-flip-hint">Tap to learn more</span>
+                </div>
+
+                <!-- Back -->
+                <div class="flip-card-back">
+                    <h3 class="back-title">ABOUT THE LIBRARY</h3>
+                    <p class="back-desc">The WAR Library is a curated collection of over <strong>300</strong> educational resources covering cryptocurrency, DeFi, personal finance, and wealth building. It is organised by topic, difficulty level, and relevance, making it easy for a complete beginner to start learning and for an experienced trader to deepen their knowledge.</p>
+                    <a href="https://waraguard.app/library" class="back-cta" target="_blank">Access Library →</a>
+                </div>
+
+                </div>
+            </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="card-wrapper">
+            <div class="flip-card" tabindex="0" role="button" aria-label="Swap utility — click to flip">
+                <div class="flip-card-inner">
+
+                <!-- Front -->
+                <div class="flip-card-front">
+                    <div class="card-glow"></div>
+                    <div class="card-icon-wrap">
+                    <img
+                        src="https://api.iconify.design/ph:arrows-left-right-bold.svg?color=%23a855f7"
+                        alt="Swap"
+                        class="card-img"
+                        onerror="this.src='https://api.iconify.design/ph:arrows-left-right-bold.svg?color=%23a855f7'"
+                    />
+                    </div>
+                    <span class="card-name">WARCAST</span>
+                    <span class="card-flip-hint">Tap to learn more</span>
+                </div>
+
+                <!-- Back -->
+                <div class="flip-card-back" style="--back-accent: #a855f7;">
+                    <h3 class="back-title">ABOUT WARCAST</h3>
+                    <p class="back-desc">WARCAST is the media arm of the Water Rabbit ecosystem. Available on Spotify and YouTube, WARCAST covers crypto market analysis, ecosystem updates, trader education, and community storytelling. WARCAST is not just content. Every episode expands the audience. Every listener is a potential WAR-RIOR.</p>
+                    <a href="https://x.com/WARCAST_" class="back-cta" target="_blank">Access WARCAST →</a>
+                </div>
+
+                </div>
+            </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="card-wrapper">
+            <div class="flip-card" tabindex="0" role="button" aria-label="Governance utility — click to flip">
+                <div class="flip-card-inner">
+
+                <!-- Front -->
+                <div class="flip-card-front">
+                    <div class="card-glow"></div>
+                    <div class="card-icon-wrap">
+                    <img
+                        src="https://api.iconify.design/ph:scales-bold.svg?color=%2300f0b0"
+                        alt="Governance"
+                        class="card-img"
+                        onerror="this.src='https://api.iconify.design/ph:scales-bold.svg?color=%2300f0b0'"
+                    />
+                    </div>
+                    <span class="card-name">WARGUARD</span>
+                    <span class="card-flip-hint">Tap to learn more</span>
+                </div>
+
+                <!-- Back -->
+                <div class="flip-card-back" style="--back-accent: #00f0b0;">
+                    <h3 class="back-title">ABOUT WARGUARD</h3>
+                    <p class="back-desc">WaraGuard is our flagship product and the most significant thing we have built. It is a real-time, multi-chain token safety intelligence platform that gives every trader instant, comprehensive due diligence on any token before they put a single dollar at risk.</p>
+                    <a href="https://waraguard.app" class="back-cta" target="_blank" >Access WARGUARD →</a>
+                </div>
+
+                </div>
+            </div>
+            </div>
+
+            <!-- ============================================================
+                ADD MORE CARDS HERE by copying a card-wrapper block above
+                ============================================================ -->
+
+        </div><!-- /carousel-track -->
+        </div><!-- /carousel-track-wrapper -->
+
+        <button class="carousel-btn next-btn" id="nextBtn" aria-label="Next">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="9 18 15 12 9 6"/>
+        </svg>
+        </button>
+
+    </div><!-- /carousel-container -->
+
+    <!-- Dot indicators -->
+    <div class="carousel-dots" id="carouselDots"></div>
+
+    </section>
+    <!-- =============END UTILITY SECTION================= -->
+
+
+    <!-- TOKENOMICS -->
+    <section id="tokenomics">
+        <div class="token-inner fade-up">
+            <div class="section-label" style="justify-content:center;">Token Details</div>
+            <h2 class="section-title">Tokenomics</h2>
+            <div class="divider" style="margin:0 auto 0;"></div>
+
+            <div class="token-grid">
+                <div class="token-cell token-supply">
+                    <div class="token-label">Total Supply</div>
+                    <div class="token-value">3.17B</div>
+                </div>
+                <div class="token-cell">
+                    <div class="token-label">Circulating Supply</div>
+                    <div class="token-value">859M+</div>
+                </div>
+                <div class="token-cell">
+                    <div class="token-label">Burned Tokens</div>
+                    <div class="token-value">2B+</div>
+                </div>
+                <div class="token-cell">
+                    <div class="token-label">Holders</div>
+                    <div class="token-value">16.8k+</div>
+                </div>
+                <div class="token-cell">
+                    <div class="token-label">Liquidity</div>
+                    <div class="token-value">100% Locked<br><small style="font-size:0.65rem;color:var(--text-dim);font-family:'Crimson Pro',serif;">to UNCX</small></div>
+                </div>
+                <div class="token-cell">
+                    <div class="token-label">Buy Tax</div>
+                    <div class="token-value">9%</div>
+                </div>
+                <div class="token-cell">
+                    <div class="token-label">Sell Tax</div>
+                    <div class="token-value">9%</div>
+                </div>
+                <div class="token-cell" style="grid-column:span 3;">
+                    <div class="token-label">Contract</div>
+                    <div class="token-value">Renounced</div>
+                </div>
+            </div>
+
+            <div class="token-address">
+                <div class="addr-label">Token Contract Address</div>
+                <code>0x57bfe2af99aeb7a3de3bc0c42c22353742bfd20d</code>
+            </div>
+        </div>
+    </section>
+
+        <!--===== ROADMAP ======-->
+
+    <section class="roadmap-section">
+
+    <!-- Background grid texture -->
+    <div class="rm-grid-bg" aria-hidden="true"></div>
+
+    <div class="rm-header">
+        <p class="rm-label">PROJECT ROADMAP</p>
+        <h2 class="rm-title">The $WARMAP</h2>
+        <p class="rm-subtitle">Building the future, one phase at a time</p>
+    </div>
+
+    <div class="rm-wrapper">
+
+        <!-- ── Vertical spine ── -->
+        <div class="rm-spine" aria-hidden="true">
+        <div class="rm-spine-fill" id="rmSpineFill"></div>
+        </div>
+
+        <!-- ── Phases ── -->
+        <div class="rm-phases">
+
+        <!-- PHASE 1 — Complete -->
+        <div class="rm-phase complete" data-phase="1">
+            <div class="rm-node-col">
+            <div class="rm-node">
+                <div class="rm-node-ring"></div>
+                <svg class="rm-node-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            </div>
+            <div class="rm-content-col">
+            <button class="rm-btn" data-index="0" aria-expanded="false">
+                <span class="rm-btn-status">Phase 1 (Completed)</span>
+                <span class="rm-btn-title">Foundation</span>
+                <span class="rm-btn-label">Launch &amp; Community</span>
+                <span class="rm-btn-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                </span>
+            </button>
+            <div class="rm-card-wrap" id="rmCard0" role="region" aria-label="Phase 1 details">
+                <div class="rm-card">
+                <div class="rm-card-glow"></div>
+                <div class="rm-card-inner">
+                    <div class="rm-card-header">
+                    <span class="rm-card-phase-tag complete">Phase 1</span>
+                    <span class="rm-card-status-badge complete">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                        Completed
+                    </span>
+                    </div>
+                    <h3 class="rm-card-title">Foundation</h3>
+                    <p class="rm-card-subtitle">Launch &amp; Community</p>
+                    <ul class="rm-card-list">
+                        <li>Water Rabbit ($WAR) token launched on BSC</li>
+                        <li>500 on-chain holders achieved</li>
+                        <li>2,000 wallet transactions processed</li>
+                        <li>waterrabbittoken.com website developed</li>
+                        <li>Roadmap and whitepaper created</li>
+                        <li>Telegram community group created</li>
+                        <li>Play-to-earn campaign launched</li>
+                        <li>64.7% of supply burned at launch</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- PHASE 2 — Complete -->
+        <div class="rm-phase complete" data-phase="2">
+            <div class="rm-node-col">
+            <div class="rm-node">
+                <div class="rm-node-ring"></div>
+                <svg class="rm-node-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            </div>
+            <div class="rm-content-col">
+            <button class="rm-btn" data-index="1" aria-expanded="false">
+                <span class="rm-btn-status">Phase 2 (Completed)</span>
+                <span class="rm-btn-title">Community Growth</span>
+                <span class="rm-btn-label">Listing &amp; Airdrop</span>
+                <span class="rm-btn-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                </span>
+            </button>
+            <div class="rm-card-wrap" id="rmCard1" role="region" aria-label="Phase 2 details">
+                <div class="rm-card">
+                <div class="rm-card-glow"></div>
+                <div class="rm-card-inner">
+                    <div class="rm-card-header">
+                    <span class="rm-card-phase-tag complete">Phase 2</span>
+                    <span class="rm-card-status-badge complete">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                        Completed
+                    </span>
+                    </div>
+                    <h3 class="rm-card-title">Community Growth</h3>
+                    <p class="rm-card-subtitle">Listing &amp; Airdrop</p>
+                    <ul class="rm-card-list">
+                        <li>Listed on DexScreener, DexTools and price tracking platforms</li>
+                        <li>1st Airdrop campaign executed</li>
+                        <li>1,000 wallet holders achieved</li>
+                        <li>1,000 Telegram members</li>
+                        <li>Telegram OTC marketplace created</li>
+                        <li>Twitter (X) account created and active</li>
+                        <li>Full website launched</li>
+                        <li>Cross-border community expansion</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- PHASE 3 — Complete -->
+        <div class="rm-phase complete" data-phase="3">
+            <div class="rm-node-col">
+            <div class="rm-node">
+                <div class="rm-node-ring"></div>
+                <svg class="rm-node-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            </div>
+            <div class="rm-content-col">
+            <button class="rm-btn" data-index="2" aria-expanded="false">
+                <span class="rm-btn-status">Phase 3 (Completed)</span>
+                <span class="rm-btn-title">Verification &amp; Audit</span>
+                <span class="rm-btn-label">Trust &amp; Transparency</span>
+                <span class="rm-btn-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                </span>
+            </button>
+            <div class="rm-card-wrap" id="rmCard2" role="region" aria-label="Phase 3 details">
+                <div class="rm-card">
+                <div class="rm-card-glow"></div>
+                <div class="rm-card-inner">
+                    <div class="rm-card-header">
+                    <span class="rm-card-phase-tag complete">Phase 3</span>
+                    <span class="rm-card-status-badge complete">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                        Completed
+                    </span>
+                    </div>
+                    <h3 class="rm-card-title">Verification &amp; Audit</h3>
+                    <p class="rm-card-subtitle">Trust &amp; Transparency</p>
+                    <ul class="rm-card-list">
+                        <li>2,000 Telegram members</li>
+                        <li>1,000 Twitter followers</li>
+                        <li>2,000 wallet holders</li>
+                        <li>Meme contest with community prizes</li>
+                        <li>White paper released publicly</li>
+                        <li>Smart contract audit completed</li>
+                        <li>Shanvere community evolved into WAR-RIORS</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- PHASE 4 — In Progress -->
+        <div class="rm-phase in-progress" data-phase="4">
+            <div class="rm-node-col">
+            <div class="rm-node">
+                <div class="rm-node-ring"></div>
+                <div class="rm-node-pulse"></div>
+                <span class="rm-node-dot"></span>
+            </div>
+            </div>
+            <div class="rm-content-col">
+            <button class="rm-btn" data-index="3" aria-expanded="false">
+                <span class="rm-btn-status">Phase 4 (In Progress)</span>
+                <span class="rm-btn-title">WaraGuard &amp; Ecosystem Launch</span>
+                <span class="rm-btn-label">Live Products &amp; Partners</span>
+                <span class="rm-btn-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                </span>
+            </button>
+            <div class="rm-card-wrap" id="rmCard3" role="region" aria-label="Phase 4 details">
+                <div class="rm-card">
+                <div class="rm-card-glow"></div>
+                <div class="rm-card-inner">
+                    <div class="rm-card-header">
+                    <span class="rm-card-phase-tag in-progress">Phase 4</span>
+                    <span class="rm-card-status-badge in-progress">
+                        <span class="badge-pulse"></span>
+                        In Progress
+                    </span>
+                    </div>
+                    <h3 class="rm-card-title">WaraGuard &amp; Ecosystem Launch</h3>
+                    <p class="rm-card-subtitle">Live Products &amp; Partners</p>
+                    <ul class="rm-card-list">
+                        <li>CoinMarketCap & CoinGecko listing ✔</li>
+                        <li>WaraGuard live at waraguard.app ✔</li>
+                        <li>Google Play Store launch (4.9, 1,000+ downloads) ✔★</li>
+                        <li>Multi-chain expansion to 7 networks ✔</li>
+                        <li>7,000+ signups & 8,500+ monthly visitors ✔</li>
+                        <li>FireScreener & Giant Wallet API integrations ✔</li>
+                        <li>WAR Points loyalty system & leaderboard ✔</li>
+                        <li>Referral system with 8-character codes ✔</li>
+                        <li>Price alerts & push notifications ✔</li>
+                        <li>First CEX listing - In Progress</li>
+                        <li>10,000 wallet holders - In Progress</li>
+                    </ul>
+                    <div class="rm-card-progress">
+                    <div class="rm-progress-header">
+                        <span>Overall Progress</span><span class="rm-progress-pct">62%</span>
+                    </div>
+                    <div class="rm-progress-bar">
+                        <div class="rm-progress-fill" style="width:62%"></div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- PHASE 5 — Upcoming -->
+        <div class="rm-phase upcoming" data-phase="5">
+            <div class="rm-node-col">
+            <div class="rm-node">
+                <div class="rm-node-ring"></div>
+                <svg class="rm-node-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/></svg>
+            </div>
+            </div>
+            <div class="rm-content-col">
+            <button class="rm-btn" data-index="4" aria-expanded="false">
+                <span class="rm-btn-status">Phase 5 (Upcoming)</span>
+                <span class="rm-btn-title">Scale &amp; CEX Listings</span>
+                <span class="rm-btn-label">Market Expansion</span>
+                <span class="rm-btn-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                </span>
+            </button>
+            <div class="rm-card-wrap" id="rmCard4" role="region" aria-label="Phase 5 details">
+                <div class="rm-card">
+                <div class="rm-card-glow"></div>
+                <div class="rm-card-inner">
+                    <div class="rm-card-header">
+                    <span class="rm-card-phase-tag upcoming">Phase 5</span>
+                    <span class="rm-card-status-badge upcoming">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/></svg>
+                        Upcoming
+                    </span>
+                    </div>
+                    <h3 class="rm-card-title">Scale &amp; CEX Listings</h3>
+                    <p class="rm-card-subtitle">Market Expansion</p>
+                    <ul class="rm-card-list">
+                        <li>200,000 on-chain transactions</li>
+                        <li>10,000 Telegram members</li>
+                        <li>10,000 Twitter followers</li>
+                        <li>Increased DEX liquidity depth</li>
+                        <li>CEX listing — Tier 2+ exchange</li>
+                        <li>2nd charitable outreach</li>
+                        <li>20,000 wallet holders</li>
+                        <li>WaraGuard UI redesign — Apple Ultra Minimal design language</li>
+                        <li>Expanded partner ecosystem</li>
+                        <li>WaraGuard Trading Bot — BSC-first, Telegram-native</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- PHASE 6 — Upcoming -->
+        <div class="rm-phase upcoming" data-phase="6">
+            <div class="rm-node-col">
+            <div class="rm-node">
+                <div class="rm-node-ring"></div>
+                <svg class="rm-node-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/></svg>
+            </div>
+            </div>
+            <div class="rm-content-col">
+            <button class="rm-btn" data-index="5" aria-expanded="false">
+                <span class="rm-btn-status">Phase 6 (Upcoming)</span>
+                <span class="rm-btn-title">Ecosystem Maturity</span>
+                <span class="rm-btn-label">Full Stack DeFi</span>
+                <span class="rm-btn-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                </span>
+            </button>
+            <div class="rm-card-wrap" id="rmCard5" role="region" aria-label="Phase 6 details">
+                <div class="rm-card">
+                <div class="rm-card-glow"></div>
+                <div class="rm-card-inner">
+                    <div class="rm-card-header">
+                    <span class="rm-card-phase-tag upcoming">Phase 6</span>
+                    <span class="rm-card-status-badge upcoming">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/></svg>
+                        Upcoming
+                    </span>
+                    </div>
+                    <h3 class="rm-card-title">Ecosystem Maturity</h3>
+                    <p class="rm-card-subtitle">Full Stack DeFi</p>
+                    <ul class="rm-card-list">
+                        <li>20,000 Telegram members</li>
+                        <li>20,000 Twitter followers</li>
+                        <li>300,000 on-chain transactions</li>
+                        <li>50,000 wallet holders</li>
+                        <li>Multiple CEX listings</li>
+                        <li>$WAR NFT collection launch</li>
+                        <li>3rd charitable outreach</li>
+                        <li>OTC platform development</li>
+                        <li>WaraGuard Trading Bot fully live</li>
+                        <li>Ecosystem token rewards launched for WAR Points holders</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        </div><!-- /rm-phases -->
+    </div><!-- /rm-wrapper -->
+
+    </section>
+    <!-- ============================================================
+        END ROADMAP SECTION
+        ============================================================ -->
+
+    <!-- PARTNERSHIPS -->
+    <section id="partnerships">
+        <div class="partnerships-inner">
+            <div class="section-label" style="text-align: center; margin-bottom: 32px;">Our Ecosystem</div>
+            <h2 class="section-title" style="text-align: center; margin-bottom: 48px;">Strategic Partners</h2>
+            
+            <div class="partners-carousel">
+                <div class="partners-track">
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <a class="partner-link" href="https://phoenixtoken.com" target="_blank" aria-label="Phoenix Token">
+                                <div class="partner-name">Phoenix Token</div>
+                                <img src="assets/partners/phoenix.jpg" alt="Phoenix Token">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <a class="partner-link" href="https://marketplace.nene.la/" target="_blank" aria-label="Nene Token">
+                                <div class="partner-name">Nene Token</div>
+                                <img src="assets/partners/nene.jpg" alt="Nene Token">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <a class="partner-link" href="https://moonpie.fun" target="_blank" aria-label="Moonpie">
+                                <div class="partner-name">Moonpie</div>
+                                <img src="assets/partners/moonpie.jpg" alt="Moonpie">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <a class="partner-link" href="https://catcaketoken.com" target="_blank" aria-label="Cat Cake Token">
+                                <div class="partner-name">Cat Cake Token</div>
+                                <img src="assets/partners/catcake.jpg" alt="Cat Cake Token">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <a class="partner-link" href="https://giantwallet.com" target="_blank" aria-label="Giant Wallet">
+                                <div class="partner-name">Giant Wallet</div>
+                                <img src="assets/partners/giantwallet.jpg" alt="Giant Wallet">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <a class="partner-link" href="https://firescreener.com" target="_blank" aria-label="FireScreener">
+                                <div class="partner-name">FireScreener</div>
+                                <img src="assets/partners/firescreener.jpg" alt="FireScreener">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <a class="partner-link" href="https://luminousai.com" target="_blank" aria-label="Luminous AI">
+                                <div class="partner-name">Luminous AI</div>
+                                <img src="assets/partners/luminousai.jpg" alt="Luminous AI">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <a class="partner-link" href="https://nabox.io" target="_blank" aria-label="Nabox">
+                                <div class="partner-name">Nabox</div>
+                                <img src="assets/partners/nabox.png" alt="Nabox">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Duplicated for seamless loop -->
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <a class="partner-link" href="https://phoenixtoken.com" target="_blank" aria-label="Phoenix Token">
+                                <div class="partner-name">Phoenix Token</div>
+                                <img src="assets/partners/phoenix.jpg" alt="Phoenix Token">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <a class="partner-link" href="https://marketplace.nene.la/" target="_blank" aria-label="Nene Token">
+                                <div class="partner-name">Nene Token</div>
+                                <img src="assets/partners/nene.jpg" alt="Nene Token">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <a class="partner-link" href="https://moonpie.fun" target="_blank" aria-label="Phoenix Token">
+                                <div class="partner-name">Moonpie</div>
+                                <img src="assets/partners/moonpie.jpg" alt="Moonpie">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <a class="partner-link" href="https://catcaketoken.com" target="_blank" aria-label="Cat Cake Token">
+                                <div class="partner-name">Cat Cake Token</div>
+                                <img src="assets/partners/catcake.jpg" alt="Cat Cake Token">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <a class="partner-link" href="https://giantwallet.com" target="_blank" aria-label="Giant Wallet">
+                                <div class="partner-name">Giant Wallet</div>
+                                <img src="assets/partners/giantwallet.jpg" alt="Giant Wallet">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <a class="partner-link" href="https://firescreener.com" target="_blank" aria-label="FireScreener">
+                                <div class="partner-name">FireScreener</div>
+                                <img src="assets/partners/firescreener.jpg" alt="FireScreener">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <a class="partner-link" href="https://luminousai.com" target="_blank" aria-label="Luminous AI">
+                                <div class="partner-name">Luminous AI</div>
+                                <img src="assets/partners/luminousai.jpg" alt="Luminous AI">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="partner-item">
+                        <div class="partner-logo">
+                            <a class="partner-link" href="https://nabox.io" target="_blank" aria-label="Nabox">
+                                <div class="partner-name">Nabox</div>
+                                <img src="assets/partners/nabox.png" alt="Nabox">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW TO BUY -->
+    <!-- <section id="buy">
+        <div class="buy-inner">
+            <div class="fade-up">
+                <div class="section-label">Step by Step</div>
+                <h2 class="section-title">How to Buy Water Rabbit (WAR)<br>on Pancakeswap</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="steps">
+                <div class="step fade-up">
+                    <div class="step-num">1</div>
+                    <div class="step-body">
+                        <h3>Create a Wallet</h3>
+                        <p>If you don't have one yet, start by creating a MetaMask, TrustWallet, or any preferred wallet. MetaMask allows you to buy, sell, send, and receive $RYU. Ensure to keep your recovery phrase in a safe place.</p>
+                    </div>
+                </div>
+                <div class="step fade-up">
+                    <div class="step-num">2</div>
+                    <div class="step-body">
+                        <h3>Get Some BNB</h3>
+                        <p>If your wallet doesn't have BNB, you can purchase it directly through MetaMask, transfer it from another wallet, or buy it on a centralized exchange and then withdraw it to your wallet.</p>
+                    </div>
+                </div>
+                <div class="step fade-up">
+                    <div class="step-num">3</div>
+                    <div class="step-body">
+                        <h3>Go to Pancakeswap</h3>
+                        <p>After you have BNB in your MetaMask wallet, visit app.pancakeswap.finance, click 'Connect to a wallet,' and select MetaMask to connect your wallet to Pancakeswap.</p>
+                    </div>
+                </div>
+                <div class="step fade-up">
+                    <div class="step-num">4</div>
+                    <div class="step-body">
+                        <h3>Swap BNB for $WAR</h3>
+                        <p>Choose the amount you wish to trade and set your slippage to 0.5–1%. Click Swap and confirm the transaction. When your wallet prompts you, confirm the action.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buy-cta fade-up">
+                <a href="https://pancakeswap.finance/swap?outputCurrency=0x57bfe2af99aeb7a3de3bc0c42c22353742bfd20d" target="_blank" class="btn-primary">Buy $WAR</a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- CONTACT US -->
+    <section id="contact">
+        <div class="contact-inner">
+            <div class="contact-header fade-up">
+                <div class="section-label">Get in Touch</div>
+                <h2 class="section-title">Contact Us</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info fade-up">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">✉</div>
+                        <div class="info-text">
+                            <p class="info-label">Email</p>
+                            <a href="mailto:info@waterrabbittoken.com">info@waterrabbittoken.com</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">🌐</div>
+                        <div class="info-text">
+                            <p class="info-label">Website</p>
+                            <a href="https://waterrabbit.com">www.waterrabbit.com</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon community"><img src="/assets/community.gif" alt="community icon" ></div>
+                        <div class="info-text">
+                            <p class="info-label">Community</p>
+                            <p class="socials">Join our WhatsApp & Telegram</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon whatsapp"><img src="/assets/whatsapp.png" alt="WhatsApp icon"></div>
+                        <div class="info-text">
+                            <p class="info-label">WhatsApp</p>
+                            <a href="https://whatsapp.com/channel/0029VbBDzH49hXFFMpzuq20d" target="_blank">Chat with us</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.869 4.326-2.96-.924c-.644-.213-.658-.644.135-.954l11.566-4.461c.54-.198 1.011.131.844.941z"/>
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <p class="info-label">Telegram</p>
+                            <a href="https://t.me/waterrabbit" target="_blank">@waterrabbit</a>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">𝕏</div>
+                        <div class="info-text">
+                            <p class="info-label">X (Twitter)</p>
+                            <a href="https://x.com/WaterRabbitNew" target="_blank">@waterrabbitnew</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form fade-up" id="contact-form">
+                    <h3>Send us a Message</h3>
+
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required placeholder="What is this about?">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required placeholder="Your message here..." rows="5"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Send Message</button>
+                    <p class="form-note">We'll get back to you as soon as possible.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="faq-inner">
+            <div class="section-label">FAQ</div>
+            <h2 class="section-title">Frequently Asked Questions about $WAR</h2>
+            <div class="divider"></div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button type="button" class="faq-toggle" aria-expanded="false">
+                        <span>What is Water Rabbit ($WAR)?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Water Rabbit is a deflationary digital currency built on the Binance Smart Chain (BSC). <br>Originally launched on July 27, 2022, by Shanvere DAO , the project's long-term mission is to evolve $WAR from a meme token <br>into a fully functioning digital currency that operates as a medium of exchange, a store of value, and a unit of account.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-toggle" aria-expanded="false">
+                        <span>Who developed the project?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The token was launched by Daddy Zeejay DAO / Shanvere DAO via a Fair Launch. <br>This means there was no presale and no private allocations given to insiders or early buyers.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-toggle" aria-expanded="false">
+                        <span>Is $WAR contract safe from rug pulls?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><b>The project's architecture is designed to make predatory developer behavior impossible through two main mechanisms:</b> <br>
+                            <ul>
+                                <li><b>Ownership Renounced:</b> The deployer wallet has permanently surrendered control of the contract. <br>Nobody, including the founding team can change the code, alter the tax rates, or mint new tokens.</li>
+
+                                <li><b>Liquidity Locked:</b> 99% of the liquidity pool is permanently locked on UNCX, a reputable Binance Smart Chain liquidity locker.</li> 
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-toggle" aria-expanded="false">
+                        <span>How does the transaction tax work on every buy or sell?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><b>$WAR implements a 9% total transaction tax on every buy and sell:</b> <br>
+                            <ul>
+                                <li><b>3% Burn Fee:</b> Automatically and permanently destroys tokens by sending them to a dead wallet. <br>This fee is hard-coded and cannot be turned off.</li>
+
+                                <li><b>6% Operations Fee:</b> Directed toward marketing, community initiatives, charity and ongoing ecosystem development.</li> 
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-toggle" aria-expanded="false">
+                        <span>What utility products exist in the Water Rabbit ecosystem?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p><b>Unlike typical low-market-cap tokens, Water Rabbit features three live ecosystem utilities built to solve common crypto market failures:</b> <br>
+                            <ul>
+                                <li><b>WARGUARD:</b> A multi-chain token scanner and security intelligence dashboard. <br>It helps users evaluate a contract's safety, liquidity metrics,<br> and holder concentrations in plain language before risking capital.</li>
+                                <li><b>WAR LIBRARY:</b> A structured, beginner-friendly educational series containing over 12 modules that <br>explain foundational blockchain concepts like cryptography, nodes, proof of work, and adoption mechanics.</li>
+                                <li><b>WARCAST:</b> The official audio layer of the project available on Spotify. It converts modules from the WAR Library into accessible, <br>bite-sized audio episodes (11–19 minutes long) to help onboard newcomers without the usual market "hype".</li> 
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-toggle" aria-expanded="false">
+                        <span>Where can I buy or track $WAR?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                            <ul>
+                                <li><b>Decentralized Exchange (DEX):</b> PancakeSwap V2 (WAR/BNB Pair)</li>
+                                <li><b>Centralized Exchange (CEX):</b>P2PB2B (WAR/USDT Pair)</li>
+                                <li><b>Tracking & Charts:</b> <a href="https://waraguard.app" target="_blank">WARGUARD</a>, CoinMarketCap, CoinGecko, DexScreener, Bogged Finance, and Poocoin</li> 
+                            </ul>   
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-brand-header">
+                    <a href="#">
+                    <img src="/assets/Rabbit.png" alt="Water Rabbit" class="footer-logo-img" />
+                    </a>
+                </div>
+                <p class="footer-tagline">Deflationary meme token built on <br>Binance Smart Chain, for education.</p>
+            </div>
+
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h4>UTILITIES</h4>
+                    <ul>
+                        <li><a href="https://waraguard.app/library" target="_blank">WAR Library</a></li>
+                        <li><a href="https://x.com/WARCAST_" target="_blank">WARCAST</a></li>
+                        <li><a href="https://waraguard.app" target="_blank">WARGUARD</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>FOLLOW US</h4>
+                    <ul>
+                        <li><a href="https://t.me/waterrabbittoken" target="_blank">TELEGRAM</a></li>
+                        <li><a href="https://x.com/WaterRabbitNew" target="_blank">TWITTER</a></li>
+                        <li><a href="https://chat.whatsapp.com/JjkVvb8lRbE7VD3pEFQtAq" target="_blank">WHATSAPP</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>OTHERS</h4>
+                    <ul>
+                        <li><a href="/assets/Water-Rabbit-English-wp.pdf" target="_blank">WHITEPAPER</a></li>
+                        <li><a href="https://pancakeswap.finance/swap?outputCurrency=0x57bfe2af99aeb7a3de3bc0c42c22353742bfd20d" target="_blank">PANCAKESWAP</a></li>
+                        <li><a href="#contact">BUY NOW</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span class="footer-copy">Copyright &copy; 2026 Water Rabbit. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

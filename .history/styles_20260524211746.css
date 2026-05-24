@@ -294,7 +294,7 @@
                                      /* Carousel slides (replaces single hero-image) */
                                      .hero-carousel {
                                          position: absolute;
-                                         top: 72px;
+                                         margin-top: 7px;
                                          left: 0;
                                          right: 0;
                                          bottom: 0;
@@ -2215,9 +2215,6 @@
                                              text-align: center;
                                              margin-left: auto;
                                              margin-right: auto;
-                                         }
-                                         .hero-slide {
-                                             transform: translateX(-50%) scale(4.6); /* Apply zoom for mobile */
                                          }
                                          .hero-coin {
                                              width: 50px;

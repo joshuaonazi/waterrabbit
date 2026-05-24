@@ -294,10 +294,7 @@
                                      /* Carousel slides (replaces single hero-image) */
                                      .hero-carousel {
                                          position: absolute;
-                                         top: 72px;
-                                         left: 0;
-                                         right: 0;
-                                         bottom: 0;
+                                         inset: 0;
                                          z-index: 2;
                                          overflow: hidden;
                                      }
@@ -355,8 +352,20 @@
                                          transform: translateY(28px);
                                          transition: opacity 0.9s ease, transform 0.9s ease;
                                      }
-                                     
-                                     .moon        { z-index: 2; }
+                                     .hero-bottom-gradient {
+                                     cursor: pointer;
+                                     clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+                                     transition: all 0.25s;
+                                     filter: drop-shadow(0 0 12px rgba(200, 146, 42, 0.2));
+                                 }
+                                 
+                                 .btn-ghost:hover {
+                                     background: rgba(200, 146, 42, 0.08);
+                                     border-color: var(--gold);
+                                     filter: drop-shadow(0 0 24px rgba(200, 146, 42, 0.6));
+                                 }
+                                 /* ─── SECTION COMMON ─────────────────────────────────────────── */
+                                    .moon        { z-index: 2; }
                                     .hero-coin   { z-index: 3; }
                                     .mountains   { z-index: 4; }
 
@@ -373,8 +382,8 @@
 
                                     .hero-content {
                                         z-index: 10;
-                                    }
 
+                                     }
 
                                      @media (min-width: 1024px) {
                                          .hero-image {
@@ -2215,9 +2224,6 @@
                                              text-align: center;
                                              margin-left: auto;
                                              margin-right: auto;
-                                         }
-                                         .hero-slide {
-                                             transform: translateX(-50%) scale(4.6); /* Apply zoom for mobile */
                                          }
                                          .hero-coin {
                                              width: 50px;
