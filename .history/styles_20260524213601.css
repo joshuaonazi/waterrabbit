@@ -2217,7 +2217,7 @@
                                              margin-right: auto;
                                          }
                                          .hero-slide {
-                                             transform: translateX(-50%) scale(1.33); /* Apply zoom for mobile */
+                                             transform: translateX(-50%) scale(2); /* Apply zoom for mobile */
                                          }
                                          .hero-coin {
                                              width: 50px;
