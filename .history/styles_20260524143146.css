@@ -316,9 +316,29 @@
                                          opacity: 1;
                                      }
 
+                                     /* Text panels on the left */
+                                     .hero-content {
+                                         position: absolute;
+                                         z-index: 10;
+                                         left: 0%;
+                                         top: 50%;
+                                         transform: translateY(-50%);
+                                         text-align: left;
+                                         max-width: 640px;
+                                         padding-left: 48px;
+                                         padding-right: 24px;
+                                     }
+
+                                     @media (max-width: 768px) {
+                                         .hero-content {
+                                             padding-left: 18px;
+                                             max-width: 92%;
+                                         }
+                                     }
+
                                      .hero-texts {
                                          position: relative;
-                                         min-height: 140px;
+                                         min-height: 100px;
                                      }
 
                                      .hero-text {
@@ -433,10 +453,10 @@
                                          top: 45%;
                                          transform: translateY(-50%);
                                          text-align: left;
+                                         align-items: left;
                                          max-width: 640px;
                                          padding-left: 48px;
                                          padding-right: 24px;
-                                         width: 100%;
                                      }
                                      
                                      .hero-eyebrow {
@@ -496,19 +516,6 @@
                                          left: 50%;
                                          transform: translateX(-50%);
                                          z-index: 10;
-                                         opacity: 0;
-                                         animation: heroCtaFadeIn 0.8s ease-out 2.5s forwards;
-                                     }
-                                     
-                                     @keyframes heroCtaFadeIn {
-                                         0% {
-                                             opacity: 0;
-                                             transform: translateX(-50%) translateY(20px);
-                                         }
-                                         100% {
-                                             opacity: 1;
-                                             transform: translateX(-50%) translateY(0);
-                                         }
                                      }
                                      
                                      .btn-primary {
@@ -2171,32 +2178,6 @@
                                          .btn-buy {
                                              display: none;
                                          }
-                                         .hero-content {
-                                             left: 0;
-                                             top: 50%;
-                                             top: auto;
-                                             margin-bottom: -30px;
-                                             transform: none;
-                                             padding: 0 24px;
-                                             text-align: center;
-                                             max-width: 100%;
-                                         }
-                                         .hero-title {
-                                             text-align: center;
-                                             font-size: clamp(2.2rem, 9vw, 3.5rem);
-                                         }
-                                         .hero-subtitle,
-                                         .hero-desc {
-                                             text-align: center;
-                                             margin-left: auto;
-                                             margin-right: auto;
-                                         }
-                                         .hero-coin {
-                                             width: 50px;
-                                             height: 50px;
-                                             top: 15%;
-                                             right: 10%;
-                                         }
                                          .token-cell {
                                              padding: 20px 16px;
                                          }
@@ -2287,15 +2268,6 @@
                                          .hero-cta-group {
                                              flex-direction: column;
                                              align-items: center;
-                                             width: 100%;
-                                             padding: 0 24px;
-                                             bottom: 40px;
-                                         }
-                                         .hero-cta-group .btn-primary,
-                                         .hero-cta-group .btn-ghost {
-                                             width: 100%;
-                                             text-align: center;
-                                             display: block;
                                          }
                                      }
 

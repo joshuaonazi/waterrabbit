@@ -496,19 +496,6 @@
                                          left: 50%;
                                          transform: translateX(-50%);
                                          z-index: 10;
-                                         opacity: 0;
-                                         animation: heroCtaFadeIn 0.8s ease-out 2.5s forwards;
-                                     }
-                                     
-                                     @keyframes heroCtaFadeIn {
-                                         0% {
-                                             opacity: 0;
-                                             transform: translateX(-50%) translateY(20px);
-                                         }
-                                         100% {
-                                             opacity: 1;
-                                             transform: translateX(-50%) translateY(0);
-                                         }
                                      }
                                      
                                      .btn-primary {
@@ -2174,9 +2161,6 @@
                                          .hero-content {
                                              left: 0;
                                              top: 50%;
-                                             top: auto;
-                                             margin-bottom: -30px;
-                                             transform: none;
                                              padding: 0 24px;
                                              text-align: center;
                                              max-width: 100%;

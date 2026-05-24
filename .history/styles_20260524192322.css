@@ -432,6 +432,8 @@
                                          left: 6%;
                                          top: 45%;
                                          transform: translateY(-50%);
+                                         top: auto;
+                                         bottom: 220px;
                                          text-align: left;
                                          max-width: 640px;
                                          padding-left: 48px;
@@ -2175,7 +2177,7 @@
                                              left: 0;
                                              top: 50%;
                                              top: auto;
-                                             margin-bottom: -30px;
+                                             bottom: 220px;
                                              transform: none;
                                              padding: 0 24px;
                                              text-align: center;

@@ -2320,6 +2320,7 @@
    z-index 3  → .hero-coin       (floating coin)
    z-index 4  → .mountains       (SVG mountain layers)
    z-index 5  → #hero-canvas     (Three.js rabbit + water)
+   z-index 8  → .hero-gradient-overlay (gradient blending)
    z-index 10 → .hero-content    (text + buttons — always on top)
 ────────────────────────────────────────────────────────────────────────────── */
 

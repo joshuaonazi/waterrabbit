@@ -2174,9 +2174,6 @@
                                          .hero-content {
                                              left: 0;
                                              top: 50%;
-                                             top: auto;
-                                             margin-bottom: -30px;
-                                             transform: none;
                                              padding: 0 24px;
                                              text-align: center;
                                              max-width: 100%;
