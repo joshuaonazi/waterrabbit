@@ -2876,8 +2876,6 @@
     border-radius: 12px;
     padding: 24px;
     transition: all 0.3s ease;
-    text-decoration: none;
-    color: inherit;
 }
 
 .info-item:hover {
@@ -2935,14 +2933,14 @@
     margin: 0;
 }
 
-.info-text .info-value, .info-text .socials {
+.info-text a, .info-text .socials {
     color: var(--gold-light);
     text-decoration: none;
     font-size: 0.95rem;
     transition: all 0.3s ease;
 }
 
-.info-item:hover .info-value {
+.info-text a:hover {
     color: var(--gold-pale);
     text-decoration: underline;
 }

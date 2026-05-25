@@ -2935,6 +2935,7 @@
     margin: 0;
 }
 
+.info-text a, .info-text .socials {
 .info-text .info-value, .info-text .socials {
     color: var(--gold-light);
     text-decoration: none;
@@ -2942,6 +2943,7 @@
     transition: all 0.3s ease;
 }
 
+.info-text a:hover {
 .info-item:hover .info-value {
     color: var(--gold-pale);
     text-decoration: underline;
