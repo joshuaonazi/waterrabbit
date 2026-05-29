@@ -584,7 +584,7 @@
                                     .utility-section {
                                     background: var(--deep);
                                     padding: 80px 20px 60px;
-                                    font-family: 'Cinzel', sans-serif;
+                                    font-family: 'Cinzel', system-ui, sans-serif;
                                     overflow: hidden;
                                     position: relative;
                                     }
@@ -838,7 +838,6 @@
                                     color: var(--text);
                                     line-height: 1.65;
                                     margin: 0;
-                                    text-transform: lowercase !important;
                                     }
 
                                     .back-desc strong {
@@ -2628,7 +2627,6 @@
     color: #e8f6ff;
     font-weight: 300;
     padding: 0 10px;
-    text-transform: lowercase !important;
 }
 
 .flip-card:hover .flip-card-front {
