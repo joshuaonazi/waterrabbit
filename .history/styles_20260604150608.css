@@ -2119,7 +2119,7 @@
 
                                      .footer-tagline {
                                          color: var(--text-dim);
-                                         font-size: 1.3rem;
+                                         font-size: 1rem;
                                          text-align: left;
                                          line-height: 1.6;
                                          margin-top: -20px;
@@ -2134,7 +2134,7 @@
 
                                      .footer-column h4 {
                                          font-family: 'Cinzel', serif;
-                                         font-size: 1rem;
+                                         font-size: 0.65rem;
                                          letter-spacing: 0.2em;
                                          text-transform: uppercase;
                                          color: var(--gold-light);
@@ -2152,7 +2152,7 @@
                                      .footer-column a {
                                          text-decoration: none;
                                          color: var(--text);
-                                         font-size: 1.2rem;
+                                         font-size: 0.8rem;
                                          font-weight: 500;
                                          transition: color 0.2s;
                                      }
